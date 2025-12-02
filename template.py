@@ -5,8 +5,10 @@ import math
 
 def inputer():
     N = int(input())
+    # N, K = map(int, input().split())
     arr = list(map(int, input().split()))
     return N, arr
+    # return N, K, arr
 
 
 def main():
@@ -17,5 +19,6 @@ def main():
 
 
 t = int(input())
+# t = 1
 for _ in range(t):
     print(main())
