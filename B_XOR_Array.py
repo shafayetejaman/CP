@@ -12,21 +12,18 @@ class AutoCleanDict(dict):
             self[key] = new_val
 
 
-yes = "Yes"
-no = "No"
-
-
 def inputer():
-    N = int(input())
+    # N = int(input())
     # N, K = map(int, input().split())
     arr = list(map(int, input().split()))
-    return N, arr
+    return arr
     # return N, K, arr
 
 
 def main():
-    N, arr = inputer()
+    N, l, r = inputer()
     ans = None
+    print(7 ^ 8 ^ 15 ^ 23 ^ 38)
 
     return ans
 

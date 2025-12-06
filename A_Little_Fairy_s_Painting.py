@@ -12,10 +12,6 @@ class AutoCleanDict(dict):
             self[key] = new_val
 
 
-yes = "Yes"
-no = "No"
-
-
 def inputer():
     N = int(input())
     # N, K = map(int, input().split())
@@ -27,6 +23,13 @@ def inputer():
 def main():
     N, arr = inputer()
     ans = None
+    s = set(arr)
+
+    for i in range(max(arr)):
+        ans = len(s)
+        if ans in s:
+            break
+        s.add(ans)
 
     return ans
 
