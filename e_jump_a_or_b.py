@@ -17,16 +17,25 @@ no = "No"
 
 
 def inputer():
-    N = int(input())
-    # N, K = map(int, input().split())
-    arr = list(map(int, input().split()))
-    return N, arr
+    # N = int(input())
+    N, M, A, B = map(int, input().split())
+    # arr = list(map(int, input().split()))
+    return N, M, A, B
     # return N, K, arr
 
 
 def main():
-    N, arr = inputer()
+    N, M, A, B = inputer()
     ans = None
+    db = {}
+    A, B = max(A, B), min(A, B)
+
+    if A * N < M:
+        return no
+
+    x = (M - N * B) / (A - B)
+
+    ans = yes if (M - N * B) >= 0 and int(x) == x else no
 
     return ans
 

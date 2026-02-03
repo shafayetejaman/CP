@@ -19,16 +19,22 @@ no = "No"
 def inputer():
     N = int(input())
     # N, K = map(int, input().split())
-    arr = list(map(int, input().split()))
-    return N, arr
+    # arr = list(map(int, input().split()))
+    s = input()
+    return N, s
     # return N, K, arr
 
 
 def main():
-    N, arr = inputer()
-    ans = None
+    N, s = inputer()
+    cnt = 0
 
-    return ans
+    s = "0" + s + "1"
+
+    for i in range(1, N + 2):
+        cnt += 1 if s[i - 1] == "0" and s[i] == "1" else 0
+
+    return cnt
 
 
 t = int(input())

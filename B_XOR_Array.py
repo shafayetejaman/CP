@@ -22,9 +22,10 @@ def inputer():
 
 def main():
     N, l, r = inputer()
-    
+
     ans = None
     print(7 ^ 8 ^ 15 ^ 23 ^ 38)
+    print()
 
     return ans
 

@@ -21,6 +21,7 @@ def inputer():
     # N, K = map(int, input().split())
     arr = list(map(int, input().split()))
     return N, arr
+
     # return N, K, arr
 
 
@@ -35,4 +36,3 @@ t = int(input())
 # t = 1
 for _ in range(t):
     print(main())
-
